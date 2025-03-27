@@ -1,5 +1,5 @@
 {
-  "name": "@federicoReghini/expo-skeleton-placeh",
+  "name": "expo-skeleton-placeh",
   "version": "1.0.0",
   "description": "A lighweight expo skeleton library",
   "main": "build/index.js",
@@ -10,7 +10,6 @@
     "lint": "expo-module lint",
     "test": "expo-module test",
     "prepare": "expo-module prepare",
-    "prepublishOnly": "expo-module prepublishOnly",
     "expo-module": "expo-module",
     "open:ios": "xed example/ios",
     "open:android": "open -a \"Android Studio\" example/android"

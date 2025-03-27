@@ -1,36 +1,30 @@
-import { useEvent } from 'expo';
-import ExpoSkeletonPlaceholder, { ExpoSkeletonPlaceholderView } from 'expo-skeleton-placeholder';
-import { Button, SafeAreaView, ScrollView, Text, View } from 'react-native';
+import { useEvent } from "expo";
+import { SkeletonPlaceholder } from "expo-skeleton-placeholder";
+import { SafeAreaView, ScrollView, Text, View } from "react-native";
 
 export default function App() {
-  const onChangePayload = useEvent(ExpoSkeletonPlaceholder, 'onChange');
-
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.container}>
         <Text style={styles.header}>Module API Example</Text>
-        <Group name="Constants">
-          <Text>{ExpoSkeletonPlaceholder.PI}</Text>
-        </Group>
-        <Group name="Functions">
-          <Text>{ExpoSkeletonPlaceholder.hello()}</Text>
-        </Group>
-        <Group name="Async functions">
-          <Button
-            title="Set value"
-            onPress={async () => {
-              await ExpoSkeletonPlaceholder.setValueAsync('Hello from JS!');
-            }}
-          />
-        </Group>
-        <Group name="Events">
-          <Text>{onChangePayload?.value}</Text>
-        </Group>
         <Group name="Views">
-          <ExpoSkeletonPlaceholderView
-            url="https://www.example.com"
-            onLoad={({ nativeEvent: { url } }) => console.log(`Loaded: ${url}`)}
-            style={styles.view}
+          <SkeletonPlaceholder
+            width="100%"
+            height={20}
+            borderRadius={4}
+            style={{ marginTop: 10 }}
+          />
+          <SkeletonPlaceholder
+            width="90%"
+            height={20}
+            borderRadius={4}
+            style={{ marginTop: 10 }}
+          />
+          <SkeletonPlaceholder
+            width="85%"
+            height={20}
+            borderRadius={4}
+            style={{ marginTop: 10 }}
           />
         </Group>
       </ScrollView>
@@ -58,13 +52,13 @@ const styles = {
   },
   group: {
     margin: 20,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     borderRadius: 10,
     padding: 20,
   },
   container: {
     flex: 1,
-    backgroundColor: '#eee',
+    backgroundColor: "#eee",
   },
   view: {
     flex: 1,

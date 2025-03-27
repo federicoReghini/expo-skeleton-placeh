@@ -1,4 +1,4 @@
-import type { StyleProp, ViewStyle } from 'react-native';
+import type { DimensionValue, ViewStyle } from "react-native";
 
 export type OnLoadEventPayload = {
   url: string;
@@ -12,8 +12,11 @@ export type ChangeEventPayload = {
   value: string;
 };
 
-export type ExpoSkeletonPlaceholderViewProps = {
-  url: string;
-  onLoad: (event: { nativeEvent: OnLoadEventPayload }) => void;
-  style?: StyleProp<ViewStyle>;
+export type SkeletonPlaceholderProps = {
+  width?: DimensionValue | undefined;
+  height?: DimensionValue | undefined;
+  borderRadius?: number;
+  style?: ViewStyle;
+  colors?: [string, string, string];
+  duration?: number;
 };

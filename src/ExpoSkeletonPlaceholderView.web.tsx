@@ -1,8 +1,10 @@
-import * as React from 'react';
+import * as React from "react";
 
-import { ExpoSkeletonPlaceholderViewProps } from './ExpoSkeletonPlaceholder.types';
+import { ExpoSkeletonPlaceholderViewProps } from "./ExpoSkeletonPlaceholder.types";
 
-export default function ExpoSkeletonPlaceholderView(props: ExpoSkeletonPlaceholderViewProps) {
+export default function ExpoSkeletonPlaceholderView(
+  props: ExpoSkeletonPlaceholderViewProps
+) {
   return (
     <div>
       <iframe

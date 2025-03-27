@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-skeleton-placeholder": ["../src/index"],
+      "expo-skeleton-placeholder/*": ["../src/*"]
+    }
+  }
+}

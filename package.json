@@ -1,6 +1,6 @@
 {
-  "name": "expo-skeleton-placeholder",
-  "version": "0.1.0",
+  "name": "@federicoReghini/expo-skeleton-placeh",
+  "version": "1.0.0",
   "description": "A lighweight expo skeleton library",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -21,13 +21,16 @@
     "expo-skeleton-placeholder",
     "ExpoSkeletonPlaceholder"
   ],
-  "repository": "https://github.com/federicoReghini/expo-skeleton-placeholder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/federicoReghini/expo-skeleton-placeh"
+  },
   "bugs": {
-    "url": "https://github.com/federicoReghini/expo-skeleton-placeholder/issues"
+    "url": "https://github.com/federicoReghini/expo-skeleton-placeh/issues"
   },
   "author": "Federico Reghini <federicoreghini@gmail.com> (https://github.com/federicoReghini)",
   "license": "MIT",
-  "homepage": "https://github.com/federicoReghini/expo-skeleton-placeholder#readme",
+  "homepage": "https://github.com/federicoReghini/expo-skeleton-placeh#readme",
   "dependencies": {},
   "devDependencies": {
     "@types/react": "~18.3.12",
